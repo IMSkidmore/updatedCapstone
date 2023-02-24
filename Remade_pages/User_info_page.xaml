@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Remade_pages.User_info_page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Remade_pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,23,0,0" Text="Next Page" FontSize="18" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="100,130,0,0" Text="Pre Flight Check" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="Next_skip_button" Content="Skip to Main Display" Margin="1254,618,0,0" VerticalAlignment="Top" Background="Red" Click="Next_skip_button_Click"/>
+        <TextBlock x:Name="TextC1" HorizontalAlignment="Left" Margin="100,200,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="TextC2" HorizontalAlignment="Left" Margin="100,230,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="TextC3" HorizontalAlignment="Left" Margin="100,260,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="TextC4" HorizontalAlignment="Left" Margin="100,290,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

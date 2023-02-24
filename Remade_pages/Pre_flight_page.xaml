@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="Remade_pages.Pre_flight_page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Remade_pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="100,130,0,0" Text="What would you like your pre-flight to consist of?" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Check1" Content="Pre-flight value 1" Margin="100,203,0,0" VerticalAlignment="Top" />
+        <CheckBox x:Name="Check2" Content="Pre-flight value 2" Margin="100,268,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Check3" Content="Pre-flight value 3" Margin="100,329,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Check4" Content="Pre-flight value 4" Margin="100,389,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="next_btn" Content="Next" Margin="1254,549,0,0" Width="146" VerticalAlignment="Top" Background="Gray" Click="next_btn_Click"/>
+        <Button x:Name="skip_btn" Content="Skip to main display" Margin="1254,618,0,0" VerticalAlignment="Top" Background="Red" Click="skip_btn_Click"/>
+        <Button x:Name="beginning_btn" Content="beginning" Margin="1254,683,0,0" VerticalAlignment="Top" Background="DarkSlateBlue" Width="146" Click="beginning_btn_Click"/>
+
+    </Grid>
+</Page>
