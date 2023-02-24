@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,9 +15,9 @@ namespace Remade_pages
             try
             {
                 //dc/dc temp
-                myPort.Write("get tempmon2.in\r");
+                /*myPort.Write("get tempmon2.in\r");
                 string tempStr = myPort.ReadExisting();
-                temp = Int32.Parse(tempStr);
+                temp = Int32.Parse(tempStr);*/
             }
 
             catch (Exception ex)
@@ -35,9 +35,9 @@ namespace Remade_pages
             try
             {
                 
-                myPort.Write("get battvmon.in\r");
+                /*myPort.Write("get battvmon.in\r");
                 string tempStr = myPort.ReadExisting();
-                volt = Int32.Parse(tempStr);
+                volt = Int32.Parse(tempStr);*/
             }
 
             catch (Exception ex)
@@ -55,9 +55,9 @@ namespace Remade_pages
             try
             {
 
-                myPort.Write("get battvmon.in\r");
+                /*myPort.Write("get battvmon.in\r");
                 string tempStr = myPort.ReadExisting();
-                pow = Int32.Parse(tempStr);
+                pow = Int32.Parse(tempStr);*/
             }
 
             catch (Exception ex)
@@ -75,9 +75,9 @@ namespace Remade_pages
             try
             {
 
-                myPort.Write("get battimon.in\r");
+                /*myPort.Write("get battimon.in\r");
                 string tempStr = myPort.ReadExisting();
-                current = Int32.Parse(tempStr);
+                current = Int32.Parse(tempStr);*/
             }
 
             catch (Exception ex)
@@ -86,6 +86,46 @@ namespace Remade_pages
             }
 
             return current;
+        }
+
+        public bool checkWarningTemp(int temp)
+        {
+            bool flag = true;
+
+            //if (temp > 120)
+                //flag = false;
+
+            return flag;
+        }
+
+        public bool checkWarningVolt(int volt)
+        {
+            bool flag = true;
+
+            //if (volt > 120)
+            //flag = false;
+
+            return flag;
+        }
+
+        public bool checkWarningPow(int pow)
+        {
+            bool flag = true;
+
+            //if (pow > 120)
+            //flag = false;
+
+            return flag;
+        }
+
+        public bool checkWarningCurrent(int current)
+        {
+            bool flag = true;
+
+            //if (current > 120)
+            //flag = false;
+
+            return flag;
         }
     }
 }
